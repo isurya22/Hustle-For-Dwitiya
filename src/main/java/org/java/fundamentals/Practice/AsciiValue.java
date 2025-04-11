@@ -1,4 +1,4 @@
-package org.fundamentals.Practice;
+package org.java.fundamentals.Practice;
 
 public class AsciiValue {
 

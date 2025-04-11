@@ -1,4 +1,4 @@
-package org.fundamentals.Interview;
+package org.java.fundamentals.Interview;
 
 //Q:- Why only one public class in Java file/can we have two public classes in one Java file?
 /*
