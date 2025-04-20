@@ -2,7 +2,7 @@ package org.java.fundamentals.Practice;
 
 public class NormalClassObject
 {
-    int age = 22;
+    public int age = 22;
     String course = "B.Tech";
     String name;
 
