@@ -15,5 +15,8 @@ public class Main {
 
         EnumSample enumVariable = EnumSample.valueOf("FRIDAY");
         System.out.println(enumVariable.name());
+
+        WeekDataWithComment checking = WeekDataWithComment.getInfoOfWeek(106);
+        System.out.println(checking.getComment());
     }
 }
