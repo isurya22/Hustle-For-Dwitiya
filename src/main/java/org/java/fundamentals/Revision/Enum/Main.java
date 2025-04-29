@@ -18,5 +18,17 @@ public class Main {
 
         WeekDataWithComment checking = WeekDataWithComment.getInfoOfWeek(106);
         System.out.println(checking.getComment());
+
+        ExampleMethodOverRide dayCheck = ExampleMethodOverRide.THURSDAY;
+        dayCheck.dummyMethod();
+
+        ExampleMethodOverRide dayCheck2 = ExampleMethodOverRide.MONDAY;
+        dayCheck2.dummyMethod();
+
+        EnumWithAbstract_Method prayer = EnumWithAbstract_Method.SUNDAY;
+        prayer.dummyMethod();
+
+        EnumWithInterfaceOFMyInterface friend = EnumWithInterfaceOFMyInterface.ABINASH;
+        System.out.println(friend.toLowerCase());
     }
 }

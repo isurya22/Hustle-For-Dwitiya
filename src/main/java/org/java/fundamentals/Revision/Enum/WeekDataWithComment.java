@@ -28,7 +28,7 @@ public enum WeekDataWithComment {
 
     public static WeekDataWithComment getInfoOfWeek(int value){
         for(WeekDataWithComment weekData : WeekDataWithComment.values()){
-            if (weekData.val == value){
+            if (weekData.val != value){
                 return weekData;
             }
         }
