@@ -1,4 +1,4 @@
-package org.java.ExceptionHandling.Revision.ClassCastException;
+package org.java.ExceptionHandling.Revision.UncheckedException.ClassCastException;
 
 public class Office {
 

@@ -1,4 +1,4 @@
-package org.java.ExceptionHandling.Revision.ArithmaticException;
+package org.java.ExceptionHandling.Revision.UncheckedException.ArithmaticException;
 
 public class ExamResult {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.java.ExceptionHandling.Revision.NullPointerException;
+package org.java.ExceptionHandling.Revision.UncheckedException.NullPointerException;
 
 public class Person {
 

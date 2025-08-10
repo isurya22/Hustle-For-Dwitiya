@@ -1,4 +1,4 @@
-package org.java.ExceptionHandling.Revision.NullPointerException;
+package org.java.ExceptionHandling.Revision.UncheckedException.NullPointerException;
 
 public class NullPointerExample {
     public static void main(String[] args) {
