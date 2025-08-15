@@ -1,4 +1,4 @@
-package org.java.CollectionsFramework.Learn;
+package org.java.CollectionsFramework.IterableCollection;
 
 import java.util.ArrayList;
 import java.util.Iterator;
