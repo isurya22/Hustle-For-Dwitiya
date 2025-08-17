@@ -5,7 +5,7 @@ public class Car {
     String carType;
 
     Car(String carName, String carType){
-        this.carName = carType;
+        this.carName = carName;
         this.carType = carType;
     }
 }
