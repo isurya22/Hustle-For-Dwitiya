@@ -7,7 +7,14 @@ public class MyMain {
 
         SharedResource sharedResource = new SharedResource();
 
-        Thread producerThread = new Thread(()->sharedResource.addItem());
+        Thread producerThread = new Thread(()-> {
+            try{
+                Thread.sleep(5000);
+            } catch (Exception ex){
+                //
+            }
+            sharedResource.addItem();});
+
         Thread consumerThread = new Thread(()->sharedResource.consumeItem());
 
         producerThread.start();

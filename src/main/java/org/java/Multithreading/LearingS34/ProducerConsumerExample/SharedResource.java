@@ -4,10 +4,11 @@ public class SharedResource {
 
     boolean isItemAvailable = false;
 
+    //Synchronized put the Monitor Lock in this Thread
     public synchronized void addItem(){
         isItemAvailable = true;
-        System.out.println("Item added by : "+ Thread.currentThread().getName());
-
+        System.out.println("Producer Thread is calling notifyAll method....");
+        notifyAll();
     }
 
     public synchronized void consumeItem(){
@@ -16,7 +17,8 @@ public class SharedResource {
         //using while loop to avoid "spurious wake-up", sometime because of system noise
         while(!isItemAvailable){
             try{
-                System.out.println("Thread " +Thread.currentThread().getName()+"is waiting now.");
+                System.out.println("Consumer Thread " +Thread.currentThread().getName()+" is waiting now.");
+                wait();  //it releases the monitor lock
             } catch (Exception ex){
                 System.out.println(ex.getStackTrace());
             }
