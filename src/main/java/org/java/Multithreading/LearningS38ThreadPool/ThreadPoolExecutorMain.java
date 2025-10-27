@@ -6,6 +6,11 @@ import java.util.concurrent.*;
 public class ThreadPoolExecutorMain {
     public static void main(String[] args) {
         ThreadPoolExecutor executor = new ThreadPoolExecutor(2,4,10, TimeUnit.MINUTES, new ArrayBlockingQueue<>(2), new CustomThreadFactory(), new CustomRejectedExecutionHandler());
+
+        //This method is used to keep the idle thread alive till 10 Minutes which passed in Constructor reference.
+        executor.allowCoreThreadTimeOut(true);
+
+        // Here we passed 7 tasks
         for(int i = 1; i <= 7; i++){
             executor.submit(()->{
                 try{
@@ -17,6 +22,7 @@ public class ThreadPoolExecutorMain {
                 System.out.println("Task processed by : " + Thread.currentThread().getName());
             });
         }
+        //shutdown is used Stop accepting new tasks, but finish all tasks that are already submitted.
         executor.shutdown();
     }
 }
