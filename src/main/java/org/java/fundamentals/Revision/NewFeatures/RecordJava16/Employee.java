@@ -6,6 +6,8 @@ public class Employee {
 
         System.out.println(user1.name()+ "," + user1.age());
 
+        //Here we used toString method.
+        //System.out.println(user1.toString()); But Complier suggests below line.
         System.out.println(user1);
     }
 }
