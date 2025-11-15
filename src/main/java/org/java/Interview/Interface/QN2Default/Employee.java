@@ -1,4 +1,4 @@
-package org.java.Interview.Interface.QN2;
+package org.java.Interview.Interface.QN2Default;
 
 public class Employee implements Manager,Director {
 

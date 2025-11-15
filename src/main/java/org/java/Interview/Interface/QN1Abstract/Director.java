@@ -1,4 +1,4 @@
-package org.java.Interview.Interface.QN1;
+package org.java.Interview.Interface.QN1Abstract;
 
 public interface Director {
     void generateReports();
