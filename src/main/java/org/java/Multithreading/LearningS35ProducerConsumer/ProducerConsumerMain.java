@@ -1,4 +1,4 @@
-package org.java.Multithreading.LearningS35;
+package org.java.Multithreading.LearningS35ProducerConsumer;
 
 public class ProducerConsumerMain {
     public static void main(String[] args) {

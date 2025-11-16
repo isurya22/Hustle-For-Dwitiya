@@ -1,4 +1,4 @@
-package org.java.Multithreading.LearningS35;
+package org.java.Multithreading.LearningS35ProducerConsumer;
 
 import java.util.LinkedList;
 import java.util.Queue;
