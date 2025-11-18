@@ -1,29 +1,9 @@
 package org.java.Interview.Comparable.PracticeDay1;
 
 public class Student implements Comparable<Student> {
-    private String name;
-    private int age;
-    private String city;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public int getAge(){
-        return age;
-    }
-
-    public void setAge(int age){
-        this.age = age;
-    }
-
-    public String getCity(){
-        return city;
-    }
+    private final String name;
+    private final int age;
+    private final String city;
 
     public Student(String name, int age, String city){
         this.name = name;
@@ -32,7 +12,16 @@ public class Student implements Comparable<Student> {
     }
 
     @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", city='" + city + '\'' +
+                '}';
+    }
+
+    @Override
     public int compareTo(Student o) {
-        return 0;
+        return this.name.compareTo(o.name);
     }
 }
