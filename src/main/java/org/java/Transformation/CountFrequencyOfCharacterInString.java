@@ -9,8 +9,10 @@ public class CountFrequencyOfCharacterInString {
 
         String word = "Suryanarayan";
 
-        Map<Character, Long> result = word.toLowerCase().chars()
-                .mapToObj(c->(char)c).collect(Collectors.groupingBy(c->c,Collectors.counting()));
+        Map<Character, Long> result = word.toLowerCase()
+                .chars()                  //converts the string into an IntStream of characters
+                .mapToObj(c->(char)c) //converts integer values to Character objects
+                .collect(Collectors.groupingBy(c->c,Collectors.counting())); //groups the same characters.
         System.out.println(result);
 
     }
