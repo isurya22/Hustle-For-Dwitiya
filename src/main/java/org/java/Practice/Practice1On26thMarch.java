@@ -14,7 +14,7 @@ public class Practice1On26thMarch {
                     if( number % 2 == 0){
                         try{
                             lock.wait();
-                        } catch (InterruptedException e){};
+                        } catch (InterruptedException ignored){}
                     }
 
                     if (number <= 10){
@@ -31,7 +31,7 @@ public class Practice1On26thMarch {
                     if (number % 2 == 1){
                         try{
                             lock.wait();
-                        } catch (InterruptedException e){};
+                        } catch (InterruptedException ignored){}
                     }
                     if(number <= 10){
                         System.out.println("Thread-2: "+ number);
