@@ -5,3 +5,4 @@
 #Print 1 to 10 numbers using 2 thread
 #Print Fibonacci series up to 20 terms
 #Write a program swapping variable a = 30, b = 80
+#Count employees and sort them by salary in descending order and then name alphabetically Using Java 8 stream
